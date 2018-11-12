@@ -142,9 +142,9 @@ def main():
     OrganizedApartments = OrganizingApartments.MergeSort(ListOfApartments) # returns list of apartments with increasing order of price
     ManageApartments = ManipulatingApartmentsListing(OrganizedApartments) # initializes the class ManipulatingApartmentsListing
     TopTenApartments = ManageApartments.TopTenApartments() # returns the top ten cheapest apartments
-    from_email = "alexbon95@yahoo.com"
-    email_password = "Time2GetSerious!" 
-    to_email = "alex45655@gmail.com"
+    from_email = ""
+    email_password = "" 
+    to_email = ""
     Emailing = EmailingUser(from_email,email_password, to_email)
     Subject = 'Top Ten Cheapest Apartments Today'
     Content = Emailing.MakingEmailContent(TopTenApartments)
